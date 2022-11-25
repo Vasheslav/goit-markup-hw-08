@@ -1,0 +1,39 @@
+.client__tittle {
+    margin-bottom: 50px;
+    
+    @include font(36px, 1.17, 0.03em);
+    
+    text-align: center;
+}
+
+.client__list {
+    display: flex;
+    gap: 30px;
+}
+
+.client__link {
+    @include displey-flex;
+
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #afb1b8;
+    border-radius: var(--br);
+
+    transition: border var(--transition);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+}
+
+.client__icon {
+    fill: #afb1b8;
+    transition: fill var(--transition);
+
+    .client__link:hover &,
+    .client__link:focus & {
+        fill: var(--accent-color);
+    }
+}

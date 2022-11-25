@@ -1,0 +1,14 @@
+.logo {
+    color: var(--accent-color);
+    font-family: var(--secondary-font);
+
+    @include font(26px, 1.19, 0.03em);
+
+    &__studio {
+        color: #000;
+    }
+
+    &__studio-white {
+        color: #fff;
+    }
+}

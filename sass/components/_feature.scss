@@ -1,0 +1,35 @@
+.feature__list {
+    display: flex;
+    gap: 30px;
+}
+
+.feature__box {
+    @include displey-flex;
+
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--br);
+}
+
+.feature__paragraf {
+    color: var(--secondary-text-color);
+}
+
+.feature__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 270px;
+
+    @include font(14px, 1.14, 0.03em);
+    text-transform: uppercase;
+}
+
+.feature__paragraf {
+    margin: 0;
+    width: 270px;
+
+    font-weight: 400;
+
+    @include font(14px, 1.71, 0.03em);
+}

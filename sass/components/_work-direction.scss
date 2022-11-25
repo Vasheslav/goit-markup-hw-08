@@ -1,0 +1,42 @@
+.work-direction {
+    padding-bottom: 94px;
+}
+
+.work-direction__title {
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    @include font(36px, 1.17, 0.03em);
+}
+
+.work-direction__list {
+    display: flex;
+}
+
+.work-direction__element {
+    position: relative;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+
+.signature {
+    @include displey-flex;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    height: 70px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.signature__title {
+
+    @include font(14px, 1.14, 0.03em);
+
+    color: var(--color-white);
+}

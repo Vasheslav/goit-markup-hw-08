@@ -1,0 +1,28 @@
+// utils
+
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixin';
+
+
+// base
+
+@import './base/common';
+@import './base/container';
+@import './base/reset';
+
+
+// components 
+
+@import './components/logo';
+@import './components/header';
+@import './components/hero';
+@import './components/feature';
+@import './components/work-direction';
+@import './components/team';
+@import './components/client';
+@import './components/portfolio-example';
+@import './components/portfolio-nav';
+@import './components/footer';
+@import './components/modal';
+
