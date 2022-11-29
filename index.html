@@ -19,7 +19,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
 
   <body>
@@ -27,8 +26,17 @@
     <header class="header">
       <div class="header__flex container">
         <nav class="nav">
-          <a href="./index.html" class="logo link">Web<span class="logo__studio">Studio</span></a>
-          <ul class="nav__list list">
+          <div class="header-mobale">
+            <a href="./index.html" class="logo link">Web<span class="logo__studio">Studio</span></a>
+          <button type="button" class="mobale-menu" aria-expanded="false" data-menu-button>
+            <svg class="mobale-menu__icon" width="40" height="40" aria-label="Перемикач мщбільного меню">
+            <use href="./images/icons.svg#icon-menu" class="mobale-menu__menu"></use>
+            <use href="./images/icons.svg#icon-close" class="mobale-menu__close"></use>
+          </svg>
+          </button>
+          </div>
+          <div class="nav__mobile">
+            <ul class="nav__list list">
             <li class="nav__item">
               <a href="./index.html" class="link link-current">Студія</a>
             </li>
@@ -54,15 +62,16 @@
             >
           </li>
         </ul>
+          </div>
       </div>
     </header>
 
     <main>
       <!-- блок с заголовком та кнопкою-->
-      <section class="hero">
+      <!-- <section class="hero">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
-      </section>
+      </section> -->
 
       <!-- список з особливостями-->
       <section class="feature section">
@@ -164,7 +173,7 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img src="./images/1image.jpg" alt="фото чоловіка" width="270" height="260" />
+              <img src="./images/1image.jpg" alt="фото чоловіка" width="450" height="460" />
               <div class="borderbox">
                 <h3 class="borderbox__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="borderbox__position">Product Designer</p>
@@ -225,7 +234,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/2image.jpg" alt="фото жінки" width="270" height="260" />
+              <img src="./images/2image.jpg" alt="фото жінки" width="450" height="460" />
               <div class="borderbox">
                 <h3 class="borderbox__name">Ольга Рєпіна</h3>
                 <p lang="en" class="borderbox__position">Frontend Developer</p>
@@ -286,7 +295,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/3image.jpg" alt="фото чоловіка" width="270" height="260" />
+              <img src="./images/3image.jpg" alt="фото чоловіка" width="450" height="460" />
               <div class="borderbox">
                 <h3 class="borderbox__name">Микола Тарасов</h3>
                 <p lang="en" class="borderbox__position">Marketing</p>
@@ -347,7 +356,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/4image.jpg" alt="фото чоловіка" width="270" height="260" />
+              <img src="./images/4image.jpg" alt="фото чоловіка" width="450" height="460" />
               <div class="borderbox">
                 <h3 class="borderbox__name">Михайло Єрмаков</h3>
                 <p lang="en" class="borderbox__position">UI Designer</p>
@@ -659,6 +668,7 @@
         <button type="submit" class="modal__button">Відправити</button>
       </div>
     </div>
-    <script src="./modal.js"></script>
+    <script src="./js-style/mobile-menu.js"></script>
+    <script src="./js-style/modal.js"></script>
   </body>
 </html>

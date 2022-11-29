@@ -1,7 +1,10 @@
-.feature__list {
-    display: flex;
-    gap: 30px;
-}
+
+
+
+// .feature__list {
+//     display: flex;
+//     gap: 30px;
+// }
 
 .feature__box {
     @include displey-flex;
@@ -12,22 +15,28 @@
     border-radius: var(--br);
 }
 
-.feature__paragraf {
-    color: var(--secondary-text-color);
+.feature__item:not(:last-child) {
+    margin-bottom: 30px;
 }
 
 .feature__title {
     margin-top: 0;
     margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
     width: 270px;
 
-    @include font(14px, 1.14, 0.03em);
+    text-align: center;
+
+    @include font(14px, 1.17, 0.03em);
     text-transform: uppercase;
 }
 
 .feature__paragraf {
+    color: var(--secondary-text-color);
+    
     margin: 0;
-    width: 270px;
+    width: 450px;
 
     font-weight: 400;
 

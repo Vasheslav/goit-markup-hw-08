@@ -5,117 +5,117 @@
     background-color: var(--footer-bg-color);
 }
 
-.footer__box {
-    display: flex;
-    align-items: baseline;
-    gap: 70px;
-}
+// .footer__box {
+//     display: flex;
+//     align-items: baseline;
+//     gap: 70px;
+// }
 
-.address__list {
-    margin-top: 20px;
+// .address__list {
+//     margin-top: 20px;
 
-    font-weight: 400;
+//     font-weight: 400;
 
-    @include font(14px, 1.71, 0.03em);
-}
+//     @include font(14px, 1.71, 0.03em);
+// }
 
-.address__link {
-    display: block;
-    color: rgba(255, 255, 255, 0.6);
+// .address__link {
+//     display: block;
+//     color: rgba(255, 255, 255, 0.6);
 
-    font-style: normal;
-    margin-bottom: 9px;
+//     font-style: normal;
+//     margin-bottom: 9px;
 
-    &-margin {
-            margin-bottom: 0;
-        }
-}
+//     &-margin {
+//             margin-bottom: 0;
+//         }
+// }
 
-.address__map {
-    display: block;
-    color: var(--color-white);
-    font-style: normal;
-    margin-bottom: 9px;
-}
+// .address__map {
+//     display: block;
+//     color: var(--color-white);
+//     font-style: normal;
+//     margin-bottom: 9px;
+// }
 
-.last-box {
-    margin-left: auto;
-}
+// .last-box {
+//     margin-left: auto;
+// }
 
-.social__tittle {
-    text-transform: uppercase;
-    margin-bottom: 20px;
+// .social__tittle {
+//     text-transform: uppercase;
+//     margin-bottom: 20px;
 
-    @include font(14px, 1.14, 0.03em);
+//     @include font(14px, 1.14, 0.03em);
 
-    color: var(--color-white);
-}
+//     color: var(--color-white);
+// }
 
-.social__list {
-    display: flex;
-    gap: 10px;
-}
+// .social__list {
+//     display: flex;
+//     gap: 10px;
+// }
 
-.social__link {
-    @include displey-flex;
+// .social__link {
+//     @include displey-flex;
 
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     background-color: rgba(255, 255, 255, 0.1);
 
-    transition: background-color var(--transition);
+//     transition: background-color var(--transition);
 
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-    }
-}
+//     &:hover,
+//     &:focus {
+//         background-color: var(--accent-color);
+//     }
+// }
 
-.social__icon {
-    fill: var(--primari-bg-color);
-}
+// .social__icon {
+//     fill: var(--primari-bg-color);
+// }
 
-.last-box__label {
-    display: flex;
-    align-items: center;
-}
+// .last-box__label {
+//     display: flex;
+//     align-items: center;
+// }
 
-.last-box__input {
+// .last-box__input {
 
-    width: 358px;
-    height: 50px;
+//     width: 358px;
+//     height: 50px;
     
-    margin-right: 12px;
-    padding: 15px 16px;
+//     margin-right: 12px;
+//     padding: 15px 16px;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: var(--br);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    background-color: transparent;
-    color: var(--color-white);
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     border-radius: var(--br);
+//     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+//     background-color: transparent;
+//     color: var(--color-white);
 
-    &::placeholder {
-        color: rgba(255, 255, 255, 0.6);
-        font-weight: 400;
+//     &::placeholder {
+//         color: rgba(255, 255, 255, 0.6);
+//         font-weight: 400;
 
-        @include font(16px, 1.25, 0.03em);
-    }
-}
+//         @include font(16px, 1.25, 0.03em);
+//     }
+// }
 
-.last-box__button {
-    @include displey-flex;
+// .last-box__button {
+//     @include displey-flex;
 
-    @extend %btn;
+//     @extend %btn;
 
-    width: 200px;
-    padding: 0;
+//     width: 200px;
+//     padding: 0;
 
-    font-weight: 700;
-    @include font(16px, 1.88, 0.06em);
-}
+//     font-weight: 700;
+//     @include font(16px, 1.88, 0.06em);
+// }
 
-.last-box__icon {
-    margin-left: 10px;
-    fill: var(--primari-bg-color);
-}
+// .last-box__icon {
+//     margin-left: 10px;
+//     fill: var(--primari-bg-color);
+// }
