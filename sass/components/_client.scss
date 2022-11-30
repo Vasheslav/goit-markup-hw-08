@@ -1,39 +1,66 @@
-// .client__tittle {
-//     margin-bottom: 50px;
+.client__tittle {
+    margin-bottom: 30px;
     
-//     @include font(36px, 1.17, 0.03em);
+    @include font(28px, 1.17, 0.03em);
+
+    @media screen and (min-width:1200px) {
+        @include font(36px, 1.17, 0.03em);
+    }
+
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+.client__list {
+    display: flex;
+    margin: -15px;
     
-//     text-align: center;
-// }
+    flex-wrap: wrap;
+}
 
-// .client__list {
-//     display: flex;
-//     gap: 30px;
-// }
+.client__item {
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
 
-// .client__link {
-//     @include displey-flex;
+    @media screen and (min-width:768px) {
+        width: calc((100% - 6 * 15px) / 3);
+    }
+    
+    @media screen and (min-width:1200px) {
+        width: calc((100% - 12 * 15px) / 6);
+    }
+}
 
-//     width: 170px;
-//     height: 92px;
+.client__link {
+    @include displey-flex;
+    
+    padding: 16px 52px;
 
-//     border: 1px solid #afb1b8;
-//     border-radius: var(--br);
+    @media screen and (min-width:768px) {
+        padding: 16px 60px;
+    }
+    @media screen and (min-width:1200px) {
+        padding: 16px 32px;
+    }
 
-//     transition: border var(--transition);
+    border: 1px solid #afb1b8;
+    border-radius: var(--br);
 
-//     &:hover,
-//     &:focus {
-//         border: 1px solid var(--accent-color);
-//     }
-// }
+    transition: border var(--transition);
 
-// .client__icon {
-//     fill: #afb1b8;
-//     transition: fill var(--transition);
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+        outline: none;
+    }
+}
 
-//     .client__link:hover &,
-//     .client__link:focus & {
-//         fill: var(--accent-color);
-//     }
-// }
+.client__icon {
+    fill: #afb1b8;
+    transition: fill var(--transition);
+
+    .client__link:hover &,
+    .client__link:focus & {
+        fill: var(--accent-color);
+    }
+}
