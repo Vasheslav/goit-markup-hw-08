@@ -1,0 +1,24 @@
+
+.mobile-menu {
+    // display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    // background-color: #fff;
+    
+    transform: translateX(-100%);
+    transition: transform var(--transition);
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+}
+
+.mobile-menu__button-place {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+}
