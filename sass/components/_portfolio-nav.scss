@@ -1,11 +1,21 @@
+
 .navi-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+    @media screen and (min-width:768px) {
+        margin-bottom: 50px;
+        justify-content: center;
+    }
 }
 
-.navi-list__item+.navi-list__item {
-    margin-left: 8px;
+@media screen and (max-width:767px) {
+    .navi-list__item {
+        margin-bottom: 15px;
+    }
+}
+.navi-list__item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .navi-list__button {
@@ -38,5 +48,6 @@
             background-color: var(--accent-color);
             box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
                         0px 3px 1px rgba(0, 0, 0, 0.1);
+            outline: none;
         }
 }
