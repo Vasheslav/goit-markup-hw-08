@@ -141,10 +141,19 @@
           <ul class="work-direction__list list">
             <li class="work-direction__element">
               <img
-                src="./images/box1.jpg"
+                srcset="
+                  ./images/direction/direction1.webp    1x,
+                  ./images/direction/direction1@2x.webp 2x
+                "
+                srcset="
+                  ./images/direction/direction1.jpg    1x,
+                  ./images/direction/direction1@2x.jpg 2x
+                "
+                src="./images/direction/direction1.jpg"
                 alt="на столі пк,на клавіатурі руки людини"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <div class="signature">
                 <h3 class="signature__title">ДЕСКТОПНІ ДОДАТКИ</h3>
@@ -152,6 +161,15 @@
             </li>
             <li class="work-direction__element">
               <img
+                srcset="
+                  ./images/direction/direction2.webp    1x,
+                  ./images/direction/direction2@2x.webp 2x
+                "
+                srcset="
+                  ./images/direction/direction2.jpg    1x,
+                  ./images/direction/direction2@2x.jpg 2x
+                "
+                src="./images/direction/direction2.jpg"
                 src="./images/box2.jpg"
                 alt="руки людини, одна лежить на клавіатурі відкритого ноутбука, інша тримає смарфон"
                 width="370"
@@ -163,6 +181,15 @@
             </li>
             <li class="work-direction__element">
               <img
+                srcset="
+                  ./images/direction/direction3.webp    1x,
+                  ./images/direction/direction3@2x.webp 2x
+                "
+                srcset="
+                  ./images/direction/direction3.jpg    1x,
+                  ./images/direction/direction3@2x.jpg 2x
+                "
+                src="./images/direction/direction3.jpg"
                 src="./images/box3.jpg"
                 alt="руки людини тримають графічний планшет та стілус"
                 width="370"
@@ -182,7 +209,45 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img src="./images/1image.jpg" alt="фото чоловіка" width="450" height="460" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img_dt@1x.webp 1x, ./images/team/img_dt@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img_dt@1x.jpg 1x, ./images/team/img_dt@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img_tab@1x.webp 1x, ./images/team/img_tab@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img_tab@1x.jpg 1x, ./images/team/img_tab@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img_tel@1x.webp 1x, ./images/team/img_tel@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img_tel@1x.jpg 1x, ./images/team/img_tel@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/img_tel@1x.jpg"
+                  alt="фото чоловіка"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="borderbox">
                 <h3 class="borderbox__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="borderbox__position">Product Designer</p>
@@ -243,7 +308,48 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/2image.jpg" alt="фото жінки" width="450" height="460" />
+              <picture>
+                <!-- desktop -->
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/img_dt@1x-1.webp 1x, ./images/team/img_dt@2x-1.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/img_dt@1x-1.jpg 1x, ./images/team/img_dt@2x-1.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/img_tab@1x-1.webp 1x, ./images/team/img_tab@2x-1.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/img_tab@1x-1.jpg 1x, ./images/team/img_tab@2x-1.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- phone -->
+                <source
+                  media="(max-width:767px)"
+                  srcset="./images/team/img_tel@1x-1.webp 1x, ./images/team/img_tel@2x-1.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="./images/team/img_tel@1x-1.jpg 1x, ./images/team/img_tel@2x-1.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/img_tel@1x-1.jpg"
+                  alt="фото жінки"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="borderbox">
                 <h3 class="borderbox__name">Ольга Рєпіна</h3>
                 <p lang="en" class="borderbox__position">Frontend Developer</p>
@@ -304,7 +410,48 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/3image.jpg" alt="фото чоловіка" width="450" height="460" />
+              <picture>
+                <!-- desktop -->
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/img_dt@1x-2.webp 1x, ./images/team/img_dt@2x-2.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/img_dt@1x-2.jpg 1x, ./images/team/img_dt@2x-2.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/img_tab@1x-2.webp 1x, ./images/team/img_tab@2x-2.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/img_tab@1x-2.jpg 1x, ./images/team/img_tab@2x-2.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- phone -->
+                <source
+                  media="(max-width:767px)"
+                  srcset="./images/team/img_tel@1x-2.webp 1x, ./images/team/img_tel@2x-2.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="./images/team/img_tel@1x-2.jpg 1x, ./images/team/img_tel@2x-2.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/img_tel@1x-2.jpg"
+                  alt="фото чоловіка"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="borderbox">
                 <h3 class="borderbox__name">Микола Тарасов</h3>
                 <p lang="en" class="borderbox__position">Marketing</p>
@@ -365,7 +512,48 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/4image.jpg" alt="фото чоловіка" width="450" height="460" />
+              <picture>
+                <!-- desktop -->
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/img_dt@1x-3.webp 1x, ./images/team/img_dt@2x-3.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/img_dt@1x-3.jpg 1x, ./images/team/img_dt@2x-3.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/img_tab@1x-3.webp 1x, ./images/team/img_tab@2x-3.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/img_tab@1x-3.jpg 1x, ./images/team/img_tab@2x-3.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- phone -->
+                <source
+                  media="(max-width:767px)"
+                  srcset="./images/team/img_tel@1x-3.webp 1x, ./images/team/img_tel@2x-3.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="./images/team/img_tel@1x-3.jpg 1x, ./images/team/img_tel@2x-3.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/img_tel@1x-3.jpg"
+                  alt="фото чоловіка"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="borderbox">
                 <h3 class="borderbox__name">Михайло Єрмаков</h3>
                 <p lang="en" class="borderbox__position">UI Designer</p>
