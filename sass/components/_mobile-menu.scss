@@ -38,6 +38,9 @@
 }
 
 .mobile-box {
+    display: flex;
+    flex-direction: column;
+
     padding: 48px 40px;
 }
 
@@ -49,20 +52,14 @@
     margin-bottom: 32px;
 }
 
-.mobile-nav__item:last-child {
-    margin-bottom: 306px;
-}
-
 .mobile-nav__link {
     color: var(--primary-text-color);
     font-weight: 500;
     @include font(40px, 1.17, 0.02em);
 }
 
-.mobile-nav__link:hover,
-.mobile-nav__link:focus {
+.mobile-nav__link-current {
     color: var(--accent-color);
-    outline: none;
 }
 
 .mobile-contact__item-tel {

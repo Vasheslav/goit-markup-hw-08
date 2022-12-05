@@ -815,25 +815,29 @@
     <!-- Mobile-menu -->
     <div class="mobile-menu js-menu-container" id="mobile-menu">
       <div class="container">
-        <button type="button" class="mobile-menu__button mobile-menu__button-place js-close-menu">
-          <svg
-            class="mobile-menu__icon"
-            width="40"
-            height="40"
-            aria-label="Закриття мoбільного меню"
-          >
-            <use href="./images/icons.svg#icon-close" class="mobile-menu__close"></use>
-          </svg>
-        </button>
         <div class="mobile-box">
+          <button type="button" class="mobile-menu__button mobile-menu__button-place js-close-menu">
+            <svg
+              class="mobile-menu__icon"
+              width="40"
+              height="40"
+              aria-label="Закриття мoбільного меню"
+            >
+              <use href="./images/icons.svg#icon-close" class="mobile-menu__close"></use>
+            </svg>
+          </button>
           <ul class="mobile-nav list">
             <li class="mobile-nav__item">
-              <a href="./index.html" class="mobile-nav__link link">Студія</a>
+              <a href="./index.html" class="mobile-nav__link mobile-nav__link-current link"
+                >Студія</a
+              >
             </li>
             <li class="mobile-nav__item">
               <a href="./portfolio.html" class="mobile-nav__link link">Портфоліо</a>
             </li>
-            <li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Контакти</a></li>
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__link link">Контакти</a>
+            </li>
           </ul>
           <ul class="mobile-contact list">
             <li class="mobile-contact__item mobile-contact__item-tel">
@@ -853,6 +857,7 @@
               >
             </li>
           </ul>
+
           <ul class="mobile-social list">
             <li class="mobile-social__item mobile-social__item-line">
               <a
