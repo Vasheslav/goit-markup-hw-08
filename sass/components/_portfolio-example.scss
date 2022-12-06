@@ -10,13 +10,13 @@
 }
 
 .example__item:not(:last-child) {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
         margin-bottom: 30px;
     }
 }
 
 .example__item {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
         max-width: 450px;
         max-height: 404px;
     }
@@ -65,15 +65,16 @@
     
     .example__item:hover & {
     transform: translateY(0);
-}
+    }
+
+    overflow-y: scroll;
 }
 
 .overlay-box__text {
 
-
     margin:auto 24px;
     @media screen and (min-width:480px) {
-            margin: 77px 24px;
+            margin-top: 77px;
         }
     @media screen and (min-width: 768px) {
             margin-top: 49px;
@@ -95,7 +96,7 @@
 }
 
 .example-border-tab {
-    @media screen and (min-width:768px) and (max-width:1199px) {
+    @media screen and (min-width:768px) and (max-width:1199.98px) {
         padding-bottom: 56px;
     }
 }

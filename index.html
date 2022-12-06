@@ -907,61 +907,63 @@
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button-close" data-modal-close>
-          <svg class="button-close__icon" width="18" height="18">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
-        <form class="inputs">
-          <div class="input-box">
-            <label for="name" class="input-box__title">Ім'я</label>
-            <div class="input-box__box">
-              <input type="text" name="name" id="name" class="input-box__input" />
-              <svg class="input-box__icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
+        <div class="modal__content">
+          <button class="button-close" data-modal-close>
+            <svg class="button-close__icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+          <form class="inputs">
+            <div class="input-box">
+              <label for="name" class="input-box__title">Ім'я</label>
+              <div class="input-box__box">
+                <input type="text" name="name" id="name" class="input-box__input" />
+                <svg class="input-box__icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="input-box">
-            <label for="tel" class="input-box__title">Телефон</label>
-            <div class="input-box__box">
-              <input type="tel" name="tel" id="tel" class="input-box__input" />
-              <svg class="input-box__icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
+            <div class="input-box">
+              <label for="tel" class="input-box__title">Телефон</label>
+              <div class="input-box__box">
+                <input type="tel" name="tel" id="tel" class="input-box__input" />
+                <svg class="input-box__icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="input-box">
-            <label for="email" class="input-box__title">Пошта</label>
-            <div class="input-box__box">
-              <input type="email" name="email" id="email" class="input-box__input" />
-              <svg class="input-box__icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
+            <div class="input-box">
+              <label for="email" class="input-box__title">Пошта</label>
+              <div class="input-box__box">
+                <input type="email" name="email" id="email" class="input-box__input" />
+                <svg class="input-box__icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="input-box">
-            <label for="comment" class="input-box__title">Коментар</label>
-            <textarea
-              name="comment"
-              id="comment"
-              placeholder="Введіть текст"
-              class="input-box__input input-box__input-textarea"
-            ></textarea>
-          </div>
-        </form>
-        <form class="checkbox">
-          <label class="checkbox__input">
-            <input type="checkbox" name="condition" class="checkbox__icon" />
-            <span class="checkbox__border"></span>
-            <div class="checkbox__text">
-              Погоджуюся з розсилкою та приймаю
-              <a href="/" class="checkbox__link">Умови договору</a>
+            <div class="input-box">
+              <label for="comment" class="input-box__title">Коментар</label>
+              <textarea
+                name="comment"
+                id="comment"
+                placeholder="Введіть текст"
+                class="input-box__input input-box__input-textarea"
+              ></textarea>
             </div>
-          </label>
-        </form>
-        <button type="submit" class="modal__button">Відправити</button>
+          </form>
+          <form class="checkbox">
+            <label class="checkbox__input">
+              <input type="checkbox" name="condition" class="checkbox__icon" />
+              <span class="checkbox__border"></span>
+              <div class="checkbox__text">
+                Погоджуюся з розсилкою та приймаю
+                <a href="/" class="checkbox__link">Умови договору</a>
+              </div>
+            </label>
+          </form>
+          <button type="submit" class="modal__button">Відправити</button>
+        </div>
       </div>
     </div>
     <!-- script -->

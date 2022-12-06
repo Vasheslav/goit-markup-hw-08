@@ -5,16 +5,11 @@
     width: 100%;
     height: 100%;
 
-    @media screen and (max-width:480px) {
-        padding: 93px 15px;
-    }
-
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms linear, visibility 250ms linear;
 
-    overflow-y: scroll;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .backdrop.is-hidden {
@@ -24,25 +19,28 @@
 }
 
 .modal {
-    position: absolute;
-    max-width: 450px;
-    max-height: 609px;
-
-    @media screen and (min-width:480px) {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 450px;
-    height: 609px;
-    }
+    min-height: 100%;
+    @include displey-flex;
+    padding: 20px 15px;
     
-    transition: transform 250ms linear;
+}
+
+.modal__content {
+    position: relative;
+    
+    max-width: 450px;
+    min-height: 609px;
+
     text-align: center;
+    
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    transition: transform 300ms linear;
+
 
     
     @media screen and (min-width:1200px) {
-        min-width: 528px;
-        min-height: 581px;
+        width: 528px;
+        height: 581px;
     }
 
     padding: 40px;
@@ -53,7 +51,7 @@
         0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
     .backdrop.is-hidden & {
-        transform: translate(-50%, -50%) scale(1.5) rotateZ(360deg);
+        transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
     }
 }
 
@@ -97,15 +95,16 @@
     margin-bottom: 20px;
 }
 
-.input-box {
+.input-box { 
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
 
 .input-box__title {
-    text-align: start;
     margin-bottom: 4px;
+
+    text-align: start;
 
     color: var(--secondary-text-color);
     font-weight: 400;
@@ -121,6 +120,7 @@
     height: 40px;
     width: 100%;
     padding-left: 42px;
+
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--transition);
@@ -149,8 +149,9 @@
 .input-box__icon {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     left: 12px;
+    transform: translateY(-50%);
+    
     transition: fill var(--transition);
 
     .input-box__input:focus+& {
@@ -197,6 +198,8 @@
     }
 
     color: var(--secondary-text-color);
+
+    user-select: none;
 }
 
 .checkbox__link {

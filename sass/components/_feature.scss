@@ -8,7 +8,7 @@
     border-radius: var(--br);
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:767.98px) {
     .feature__item:not(:last-child) {
     margin-bottom: 30px;
 }
@@ -20,7 +20,7 @@
     margin-right: auto;
     max-width: 270px;
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:767.98px) {
         text-align: center;
         margin-left: auto;
     }

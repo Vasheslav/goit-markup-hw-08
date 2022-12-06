@@ -35,7 +35,7 @@
     border-bottom-right-radius: var(--br);
     border-bottom-left-radius: var(--br);
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:767.98px) {
         &:not(:last-child) {
         margin-bottom: 30px;
     } 
@@ -84,7 +84,7 @@
     min-height: 44px;
     fill: #afb1b8;
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:768px) {
         border-radius: 50%;
     transition: fill var(transition),
         background-color var(transition);
