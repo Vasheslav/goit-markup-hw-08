@@ -270,6 +270,12 @@ img {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-mob.jpg);
   max-width: 1600px;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Hero-mob@2x.jpg);
@@ -313,6 +319,14 @@ img {
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    max-width: 696px;
+  }
 }
 
 .hero__button {
@@ -471,6 +485,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team__title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -583,6 +598,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .client__tittle {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
