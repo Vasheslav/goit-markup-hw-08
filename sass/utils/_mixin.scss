@@ -1,14 +1,11 @@
 @mixin displey-flex {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-@mixin font($size, $lh, $ls ) {
-
-    font-size: $size;
-    line-height: $lh;
-    letter-spacing: $ls;
+@mixin font($size, $lh, $ls) {
+  font-size: $size;
+  line-height: $lh;
+  letter-spacing: $ls;
 }

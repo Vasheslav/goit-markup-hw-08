@@ -1,90 +1,83 @@
 .hero {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    @media screen and (min-width:1200px) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
-    text-align: center;
+  text-align: center;
 
-    background-color: #c4c4c4;
-    background-size: cover;
-    background-position: center;
+  background-color: #c4c4c4;
+  background-size: cover;
+  background-position: center;
 
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/Hero-mob.jpg);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero/Hero-mob.jpg);
+      url(../images/hero/Hero-mob@2x.jpg);
+  }
 
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-mob@2x.jpg);
-        }
-    
-    @media screen and (min-width: 481px) {
-        
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../images/hero/Hero-tab.jpg);
-            
-                @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-tab@2x.jpg);
-                }
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/Hero-tab.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/Hero-tab@2x.jpg);
     }
+  }
 
-    @media screen and (min-width:769px) {
-        
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../images/hero/Hero-dt.jpg);
-        
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-dt@2x.jpg);
-            }
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/Hero-dt.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/Hero-dt@2x.jpg);
     }
+  }
 
-    max-width: 1600px;
+  max-width: 1600px;
 }
 
 .hero__title {
-    margin-top: 0;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
-    color: var(--primari-bg-color);
+  color: var(--primari-bg-color);
 
-    max-width: 360px;
-    font-weight: 900;
+  max-width: 360px;
+  font-weight: 900;
 
-    @include font(26px, 1.62, 0.06em);
+  @include font(26px, 1.62, 0.06em);
 
-    @media screen and (min-width:1200px) {
-        @include font(44px, 1.36, 0.06em);
-        max-width: 696px;
-    }
-    
-    text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    @include font(44px, 1.36, 0.06em);
+    max-width: 696px;
+  }
+
+  text-transform: uppercase;
 }
 
 .hero__button {
-    @extend %btn;
-    
-    padding: 10px 24px;
-    min-width: 200px;
-    
-    font-style: normal;
-    font-weight: 700;
-    
-    @include font(16px, 1.88, 0.06em);
-    &:hover,
-    &:focus {
+  @extend %btn;
+
+  padding: 10px 24px;
+  min-width: 200px;
+
+  font-style: normal;
+  font-weight: 700;
+
+  @include font(16px, 1.88, 0.06em);
+  &:hover,
+  &:focus {
     background-color: #188ce8;
-    }
+  }
 }
-
-

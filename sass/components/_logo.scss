@@ -1,18 +1,18 @@
 .logo {
-    color: var(--accent-color);
-    font-family: var(--secondary-font);
+  color: var(--accent-color);
+  font-family: var(--secondary-font);
 
-    @include font(24px, 1.17, 0.03em);
-    
-    @media screen and (min-width: 1200px) {
-        @include font(26px, 1.19, 0.03em);
-    }
+  @include font(24px, 1.17, 0.03em);
 
-    &__studio {
-        color: #000;
-    }
+  @media screen and (min-width: 1200px) {
+    @include font(26px, 1.19, 0.03em);
+  }
 
-    &__studio-white {
-        color: #fff;
-    }
+  &__studio {
+    color: #000;
+  }
+
+  &__studio-white {
+    color: #fff;
+  }
 }

@@ -1,60 +1,59 @@
-
 .feature__box {
-    @include displey-flex;
+  @include displey-flex;
 
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: var(--secondary-bg-color);
-    border-radius: var(--br);
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-bg-color);
+  border-radius: var(--br);
 }
 
-@media screen and (max-width:767.98px) {
-    .feature__item:not(:last-child) {
+@media screen and (max-width: 767.98px) {
+  .feature__item:not(:last-child) {
     margin-bottom: 30px;
-}
+  }
 }
 
 .feature__title {
-    margin-top: 0;
-    margin-bottom: 10px;
-    margin-right: auto;
-    max-width: 270px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-right: auto;
+  max-width: 270px;
 
-    @media screen and (max-width:767.98px) {
-        text-align: center;
-        margin-left: auto;
-    }
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+    margin-left: auto;
+  }
 
-    @include font(14px, 1.17, 0.03em);
-    text-transform: uppercase;
+  @include font(14px, 1.17, 0.03em);
+  text-transform: uppercase;
 }
 
 .feature__paragraf {
-    color: var(--secondary-text-color);
-    
-    margin: 0;
-    max-width: 450px;
+  color: var(--secondary-text-color);
 
-    font-weight: 400;
+  margin: 0;
+  max-width: 450px;
 
-    @include font(14px, 1.71, 0.03em);
+  font-weight: 400;
+
+  @include font(14px, 1.71, 0.03em);
 }
 
 .feature__list {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .feature__item {
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 2 * 30px) / 2);
-        margin: 15px;
-    }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        width: calc((100% - 4 * 30px) / 4);
-    }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 4 * 30px) / 4);
+  }
 }

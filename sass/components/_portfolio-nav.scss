@@ -1,54 +1,52 @@
-
 .navi-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 35px;
-    @media screen and (min-width:768px) {
-        margin-bottom: 50px;
-        justify-content: center;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
 
-@media screen and (max-width:767.98px) {
-    .navi-list__item {
-        margin-bottom: 15px;
-    }
+@media screen and (max-width: 767.98px) {
+  .navi-list__item {
+    margin-bottom: 15px;
+  }
 }
 
 .navi-list__item:not(:last-child) {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .navi-list__button {
-    color: var(--primary-text-color);
-    background-color: #f5f4fa;
-    border-style: none;
-    min-width: 73px;
-    border-radius: var(--br);
-    text-align: center;
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
+  border-style: none;
+  min-width: 73px;
+  border-radius: var(--br);
+  text-align: center;
 
-    font-weight: 500;
+  font-weight: 500;
 
-    @include font(16px, 1.62, 0.03em);
+  @include font(16px, 1.62, 0.03em);
 
-    cursor: pointer;
-    transition: color var(--transition),
-        background-color var(--transition);
+  cursor: pointer;
+  transition: color var(--transition), background-color var(--transition);
 
-        &:first-child {
-            padding: 6px 25px;
-        }
-        
-            &:not(:first-child) {
-            padding: 6px 22px;
-        }
+  &:first-child {
+    padding: 6px 25px;
+  }
 
-        &:hover,
-        &:focus {
-            color: var(--color-white);
-            background-color: var(--accent-color);
-            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
-                        0px 3px 1px rgba(0, 0, 0, 0.1);
-            outline: none;
-        }
+  &:not(:first-child) {
+    padding: 6px 22px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--color-white);
+    background-color: var(--accent-color);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 3px 1px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
 }

@@ -1,26 +1,25 @@
 :root {
-    --main-font: 'Roboto', sans-serif;
-    --secondary-font: 'Raleway', sans-serif;
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
 
-    // text-color
+  // text-color
 
-    --primary-text-color: #212121;
-    --secondary-text-color: #757575;
-    --color-white: #ffffff;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --color-white: #ffffff;
 
-    // bg-color
+  // bg-color
 
-    --primari-bg-color: #ffffff;
-    --secondary-bg-color: #F5F4FA;
-    --accent-color: #2196f3;
-    --footer-bg-color: #2F303A;
+  --primari-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --accent-color: #2196f3;
+  --footer-bg-color: #2f303a;
 
+  // animation
 
-    // animation
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // border
 
-    // border
-
-    --br: 4px;
+  --br: 4px;
 }

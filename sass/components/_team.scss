@@ -1,98 +1,95 @@
 .team {
-    background-color: #f5f4fa;
+  background-color: #f5f4fa;
 
-    text-align: center;
+  text-align: center;
 }
 
 .team__title {
-    margin-bottom: 30px;
-    @include font(28px, 1.17, 0.03em);
+  margin-bottom: 30px;
+  @include font(28px, 1.17, 0.03em);
 
-    @media screen and (min-width:1200px) {
-        margin-bottom: 50px;
-        @include font(36px, 1.17, 0.03em);
-    }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    @include font(36px, 1.17, 0.03em);
+  }
 }
 
 .team__list {
-    @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    }
-    
-    @media screen and (min-width:1200px) {
-        flex-wrap: nowrap;
-    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .team__item {
-    max-width: 450px;
+  max-width: 450px;
 
-    background-color: var(--primari-bg-color);
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    border-bottom-right-radius: var(--br);
-    border-bottom-left-radius: var(--br);
+  background-color: var(--primari-bg-color);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-bottom-right-radius: var(--br);
+  border-bottom-left-radius: var(--br);
 
-    @media screen and (max-width:767.98px) {
-        &:not(:last-child) {
-        margin-bottom: 30px;
-    } 
+  @media screen and (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
+  }
 
-    @media screen and (min-width:768px) {
-        margin: 15px;
-        width: calc((100% - 4 * 15px) / 2);
-    }
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
+  }
 }
 
 .borderbox {
-    padding-top: 30px;
-    padding-bottom: 24px;
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 
 .borderbox__name,
 .borderbox__position {
-
-    @include font(16px, 1.17, 0.03em);
+  @include font(16px, 1.17, 0.03em);
 }
 
 .borderbox__name {
-    margin-bottom: 10px;
-    font-weight: 500;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .borderbox__position {
-    margin-bottom: 16px;
-    font-weight: 400;
-    
-    color: var(--secondary-text-color);
+  margin-bottom: 16px;
+  font-weight: 400;
+
+  color: var(--secondary-text-color);
 }
 
 .social-list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .social-list__link {
-    
-    @include displey-flex;
+  @include displey-flex;
 
-    min-width: 44px;
-    min-height: 44px;
-    fill: #afb1b8;
+  min-width: 44px;
+  min-height: 44px;
+  fill: #afb1b8;
 
-    @media screen and (min-width:768px) {
-        border-radius: 50%;
-    transition: fill var(transition),
-        background-color var(transition);
+  @media screen and (min-width: 768px) {
+    border-radius: 50%;
+    transition: fill var(transition), background-color var(transition);
 
-        &:hover,
-        &:focus {
-            background-color: var(--accent-color);
-            fill: var(--primari-bg-color);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      fill: var(--primari-bg-color);
     }
-}
+  }
 }
